@@ -11,7 +11,7 @@
       "city": "Dongguan",
       "countryCode": "CN",
       "region": "Guangdong"
-    },
+    }
   },
   "work": [
     {
@@ -60,7 +60,7 @@
       "startDate": "2009-09",
       "endDate": "2013-07",
       "Thesis": ["The Research of Automatic Arrangement (Honors)"]
-    },
+    }
   ],
   "Funds and Grants": [
     {
@@ -69,7 +69,7 @@
       "awarder": "FRQSC",
       "url": "https://frq.gouv.qc.ca/en/society-and-culture/",
       "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis using Deep Learning for Large-scale Datasets'"
-    },
+    }
 	
   ],
   "awards": [
@@ -91,5 +91,5 @@
       "fluency": "Fluent",
       "icon": ""
     }
-  ],
+  ]
 }
