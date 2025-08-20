@@ -95,6 +95,9 @@ ninja.data = [{
             },},{id: "news-became-an-assistant-professor-at-great-bay-university",
           title: 'Became an assistant professor at Great Bay University!',
           description: "",
+          section: "News",},{id: "news-looking-for-research-assistants-postdoctoral-researchers-phd-master-students-and-intern-exchange-students-招收研究助理-博士后-博士-硕士生和实习-交换生",
+          title: 'Looking for research assistants, postdoctoral researchers, PhD/master students, and intern/exchange students (招收研究助理，博士后，博士/硕士生和实习/交换生).',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
