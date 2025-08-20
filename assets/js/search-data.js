@@ -114,7 +114,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/Yaolong Ju# your LinkedIn user name", "_blank");
+          window.open("https://www.linkedin.com/in/yaolong-ju-06509a5b", "_blank");
         },
       },{
         id: 'social-scholar',
