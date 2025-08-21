@@ -61,51 +61,51 @@
   ],
   "funds and grants": [
     {
-      "title": "The Québec Research Fund - Society and Culture (FRQSC) Doctoral Scholarship ($84,000 CAD)",
+      "name": "The Québec Research Fund - Society and Culture (FRQSC) Doctoral Scholarship ($84,000 CAD)",
 	  "startDate": "2018",
 	  "endDate": "2022",
-      "awarder": "FRQSC",
+      "position": "FRQSC",
       "url": "https://frq.gouv.qc.ca/en/society-and-culture/",
       "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis using Deep Learning for Large-scale Datasets', supervised by Prof. Ichiro Fujinaga."
     },
 	{
-      "title": "CIRMMT Student Award ($2,100 CAD)",
+      "name": "CIRMMT Student Award ($2,100 CAD)",
       "startDate": "2020",
 	  "endDate": "2021",
-      "awarder": "Centre for Interdisciplinary Research in Music Media and Technology (CIRMMT)",
+      "position": "Centre for Interdisciplinary Research in Music Media and Technology (CIRMMT)",
       "url": "https://www.cirmmt.org/en/funding/past-student-award-recipients",
       "summary": "Awarded by the research topic of 'Automatic figured bass annotation and search in Bach chorales', supervised by Prof. Ichiro Fujinaga and Prof. Peter Schubert."
     },
 	{
-      "title": "CIRMMT Agile Seed Fund ($1,500 CAD)",
+      "name": "CIRMMT Agile Seed Fund ($1,500 CAD)",
       "startDate": "2019",
 	  "endDate": "2020",
-      "awarder": "FRQSC",
+      "position": "CIRMMT",
       "url": "https://www.cirmmt.org/en/funding/past-agile-seed-funding-recipients",
       "summary": "Awarded by the research topic of 'Digitizing and translating figured bass into chord labels for Bach chorales in symbolic formats', co-applied with Sylvain Margot and supervised by Prof. Ichiro Fujinaga."
     },
 	{
-      "title": "CSCDS Interdisciplinary Research Project Seed Fund ($1,000 CAD)",
+      "name": "CSCDS Interdisciplinary Research Project Seed Fund ($1,000 CAD)",
       "startDate": "2019",
 	  "endDate": "2020",
 	  "url": "https://www.mcgill.ca/cscds/research-slam-networking-launch",
-      "awarder": "Centre for Social and Cultural Data Science, McGill University",
+      "position": "Centre for Social and Cultural Data Science, McGill University",
       "summary": "Awarded by the research topic of 'The Evolution of Common-Practice Harmony in Baroque Music: A Computational Study of Four-Voice Choral Music', co-applied with Samuel Howes."
     },
 	{
-      "title": "CIRMMT Student Award ($3,500 CAD)",
+      "name": "CIRMMT Student Award ($3,500 CAD)",
       "startDate": "2018",
 	  "endDate": "2019",
-      "awarder": "CIRMMT",
+      "position": "CIRMMT",
       "url": "https://www.cirmmt.org/en/funding/past-student-award-recipients",
       "summary": "Awarded by the research topic of 'Generating Multi-style Harmonic Analysis Using Artificial Intelligence', supervised by Prof. Ichiro Fujinaga and Prof. Jon Wild."
     },
 	{
-      "title": "CSCDS Interdisciplinary Research Project Seed Fund ($2,000 CAD)",
+      "name": "CSCDS Interdisciplinary Research Project Seed Fund ($2,000 CAD)",
       "startDate": "2017",
 	  "endDate": "2018",
 	  "url": "https://www.mcgill.ca/cscds/research-slam-networking-launch",
-      "awarder": "Centre for Social and Cultural Data Science, McGill University",
+      "position": "Centre for Social and Cultural Data Science, McGill University",
       "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis for Symbolic Music Using Deep Learning', co-applied with Nathaniel Condit-Schultz and Koustuv Sinha."
     }
   ],
@@ -113,44 +113,52 @@
     {
       "name": "CIRMMT Research Axis 2: Music Information Research",
       "position": "Coordinator",
-	  "date": "2017 to 2021",
+	  "startDate": "2017",
+	  "endDate": "2021",
       "summary": "Assisting in the events for distinguished lectures and hosting regular meetings within the research axis."
     },
     {
       "name": "The 21st International Society for Music Information Retrieval Conference (ISMIR)",
       "position": "Coordinator",
-	  "date": "2020",
+	  "startDate": "2020",
+	  "endDate": "2020",
       "summary": "In charge of posting and maintaining recorded videos at Bilibili and asynchronized conversations at Slack."
     },
 	{
       "name": "IEEE Signal Processing Letters",
 	  "position": "Reviewer",
-	  "date": "2025"
+	  "startDate": "2025",
+	  "endDate": "2025",
     },
 	{
       "name": "International Joint Conference on Neural Networks",
 	  "position": "Reviewer",
-	  "date": "2025"
+	  "startDate": "2025",
+	  "endDate": "2025",
     },
 	{
       "name": "International Conference on Multimedia& Expo",
 	  "position": "Reviewer",
-	  "date": "2025"
+	  "startDate": "2025",
+	  "endDate": "2025",
     },
 	{
       "name": "International Conference on Acoustics, Speech and Signal Processing",
 	  "position": "Reviewer",
-	  "date": "2023-2025"
+	  "startDate": "2023",
+	  "endDate": "2025",
     },
 	{
       "name": "International Society for Music Information Retrieval Conference",
 	  "position": "Reviewer",
-	  "date": "2020-2025"
+	  "startDate": "2020",
+	  "endDate": "2025",
     },
 	{
       "name": "Digital Library for Musicology (also Programme Committee member)",
 	  "position": "Reviewer",
-	  "date": "2023, 2025"
+	  "startDate": "2023",
+	  "endDate": "2025",
     }
   ],
   "honors and awards": [
