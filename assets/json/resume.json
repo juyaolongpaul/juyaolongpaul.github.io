@@ -62,14 +62,43 @@
       "Thesis": ["The Research of Automatic Arrangement (Honors)"]
     }
   ],
-  "Funds and Grants": [
+  "funds and grants": [
     {
+      "title": "The Québec Research Fund - Society and Culture (FRQSC) Doctoral Scholarship",
+      "date": "2018-2022",
+      "awarder": "FRQSC",
+      "url": "https://frq.gouv.qc.ca/en/society-and-culture/",
+      "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis using Deep Learning for Large-scale Datasets', supervised by Prof. Ichiro Fujinaga"
+    },
+	{
+      "title": "CIRMMT Student Award",
+      "date": "2020-2021",
+      "awarder": "CIRMMT",
+      "url": "https://www.cirmmt.org/en/funding/past-student-award-recipients",
+      "summary": "Awarded by the research topic of 'Automatic figured bass annotation and search in Bach chorales', supervised by Prof. Ichiro Fujinaga and Prof. Peter Schubert"
+    },
+	{
+      "title": "The Québec Research Fund - Society and Culture (FRQSC) Doctoral Scholarship",
+      "date": "2018-2022",
+      "awarder": "FRQSC",
+      "url": "https://frq.gouv.qc.ca/en/society-and-culture/",
+      "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis using Deep Learning for Large-scale Datasets'"
+    },
+	{
+      "title": "The Québec Research Fund - Society and Culture (FRQSC) Doctoral Scholarship",
+      "date": "2018-2022",
+      "awarder": "FRQSC",
+      "url": "https://frq.gouv.qc.ca/en/society-and-culture/",
+      "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis using Deep Learning for Large-scale Datasets'"
+    },
+	{
       "title": "The Québec Research Fund - Society and Culture (FRQSC) Doctoral Scholarship",
       "date": "2018-2022",
       "awarder": "FRQSC",
       "url": "https://frq.gouv.qc.ca/en/society-and-culture/",
       "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis using Deep Learning for Large-scale Datasets'"
     }
+	
 	
   ],
   "awards": [

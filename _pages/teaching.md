@@ -2,19 +2,11 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: The following are the courses I have taught and students I have mentored or collaborated:
+description: Materials for courses you taught. Replace this text with your description.
 nav: true
 nav_order: 6
 ---
-Courses:
 
-1. Instructor: New Media Production II (MUMT 303), McGill University. (Winter 2020)
-2. Teaching Assistant: Fundamentals of New Media (MUMT 202), McGill University. (Fall 2018)
-3. Teaching Assistant: Webcasting/Recording Technician, McGill University. (Fall 2017 and Winter 2018)
+For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
-Students: 
-
-1. Zhiwei Lin, Master of Engineer, Tsinghua University. (Oct. 2023 - June 2024)
-2. Jiajun Deng, Ph.D. student, The Chinese University of Hong Kong. (Jan. 2024 - Apr. 2024)
-3. Yulun Wu, Ph.D. student, Fudan University. (Oct. 2023 - Jan. 2024)
-4. Sylvain Margot, Ph.D. student, McGill University. (Oct. 2019 - Nov. 2020)
+Organize your courses by years, topics, or universities, however you like!
