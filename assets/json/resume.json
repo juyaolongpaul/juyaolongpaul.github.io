@@ -32,75 +32,78 @@
   ],
   "education": [
     {
-      "institution": "McGill University, ",
+      "institution": "McGill University",
       "location": "Montreal, Canada",
       "url": "https://www.mcgill.ca/music/programs/phd-music-technology/program-overview",
-      "area": "Music Technology",
+      "area": "Music Technology (Dissertation: Addressing Ambiguity in Supervised Machine Learning: A Case Study on Automatic Chord Labelling, supervised by Prof. Ichiro Fujinaga and Prof. Cory McKay)",
       "studyType": "PhD",
       "startDate": "2016-09",
       "endDate": "2021-10",
-      "Dissertation": ["Addressing Ambiguity in Supervised Machine Learning: A Case Study on Automatic Chord Labelling"]
     },
 	{
-      "institution": "Peking University, ",
+      "institution": "Peking University",
       "location": "Beijing, China",
       "url": "https://www.cis.pku.edu.cn/",
-      "area": "Intelligence Science and Technology",
-      "studyType": "M.S. (Recommended for admission)",
+      "area": "Intelligence Science and Technology (Thesis: Research on Automatic Chord Arrangement Based on Deep Recurrent Neural Networks, supervised by Prof. Xihong Wu)",
+      "studyType": "Master of Science (Recommended for admission)",
       "startDate": "2013-09",
       "endDate": "2016-07",
-      "Thesis": ["Research on Automatic Chord Arrangement Based on Deep Recurrent Neural Networks"]
     },
 	{
-      "institution": "Jilin University, ",
+      "institution": "Jilin University",
       "location": "Changchun, China",
       "url": "https://ccst.jlu.edu.cn/",
-      "area": "Computer Science and Technology",
-      "studyType": "B.S.",
+      "area": "Computer Science and Technology (Thesis: The Research of Automatic Arrangement (Honors), supervised by Prof. Lan Huang)",
+      "studyType": "Bachelor of Science",
       "startDate": "2009-09",
       "endDate": "2013-07",
-      "Thesis": ["The Research of Automatic Arrangement (Honors)"]
     }
   ],
   "funds and grants": [
     {
       "title": "The Québec Research Fund - Society and Culture (FRQSC) Doctoral Scholarship ($84,000 CAD)",
-      "date": "2018-2022",
+	  "startDate": "2018",
+	  "endDate": "2022",
       "awarder": "FRQSC",
       "url": "https://frq.gouv.qc.ca/en/society-and-culture/",
       "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis using Deep Learning for Large-scale Datasets', supervised by Prof. Ichiro Fujinaga."
     },
 	{
       "title": "CIRMMT Student Award ($2,100 CAD)",
-      "date": "2020-2021",
-      "awarder": "CIRMMT",
+      "startDate": "2020",
+	  "endDate": "2021",
+      "awarder": "Centre for Interdisciplinary Research in Music Media and Technology (CIRMMT)",
       "url": "https://www.cirmmt.org/en/funding/past-student-award-recipients",
       "summary": "Awarded by the research topic of 'Automatic figured bass annotation and search in Bach chorales', supervised by Prof. Ichiro Fujinaga and Prof. Peter Schubert."
     },
 	{
       "title": "CIRMMT Agile Seed Fund ($1,500 CAD)",
-      "date": "2019-2020",
+      "startDate": "2019",
+	  "endDate": "2020",
       "awarder": "FRQSC",
       "url": "https://www.cirmmt.org/en/funding/past-agile-seed-funding-recipients",
       "summary": "Awarded by the research topic of 'Digitizing and translating figured bass into chord labels for Bach chorales in symbolic formats', co-applied with Sylvain Margot and supervised by Prof. Ichiro Fujinaga."
     },
 	{
       "title": "CSCDS Interdisciplinary Research Project Seed Fund ($1,000 CAD)",
-      "date": "2019-2020",
+      "startDate": "2019",
+	  "endDate": "2020",
 	  "url": "https://www.mcgill.ca/cscds/research-slam-networking-launch",
       "awarder": "Centre for Social and Cultural Data Science, McGill University",
       "summary": "Awarded by the research topic of 'The Evolution of Common-Practice Harmony in Baroque Music: A Computational Study of Four-Voice Choral Music', co-applied with Samuel Howes."
     },
 	{
       "title": "CIRMMT Student Award ($3,500 CAD)",
-      "date": "2018-2019",
+      "startDate": "2018",
+	  "endDate": "2019",
       "awarder": "CIRMMT",
       "url": "https://www.cirmmt.org/en/funding/past-student-award-recipients",
       "summary": "Awarded by the research topic of 'Generating Multi-style Harmonic Analysis Using Artificial Intelligence', supervised by Prof. Ichiro Fujinaga and Prof. Jon Wild."
     },
 	{
       "title": "CSCDS Interdisciplinary Research Project Seed Fund ($2,000 CAD)",
-      "date": "2017-2018",
+      "startDate": "2017",
+	  "endDate": "2018",
 	  "url": "https://www.mcgill.ca/cscds/research-slam-networking-launch",
       "awarder": "Centre for Social and Cultural Data Science, McGill University",
       "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis for Symbolic Music Using Deep Learning', co-applied with Nathaniel Condit-Schultz and Koustuv Sinha."
@@ -108,39 +111,45 @@
   ],
   "academic services": [
     {
-      "Coordinator": "CIRMMT Research Axis 2: Music Information Research",
-      "institution": "CIRMMT",
-	  "date": "2017-2021",
+      "name": "CIRMMT Research Axis 2: Music Information Research",
+      "position": "Coordinator",
+	  "date": "2017 to 2021",
       "summary": "Assisting in the events for distinguished lectures and hosting regular meetings within the research axis."
     },
     {
-      "Coordinator": "The 21st International Society for Music Information Retrieval Conference (ISMIR)",
-      "institution": "ISMIR",
+      "name": "The 21st International Society for Music Information Retrieval Conference (ISMIR)",
+      "position": "Coordinator",
 	  "date": "2020",
       "summary": "In charge of posting and maintaining recorded videos at Bilibili and asynchronized conversations at Slack."
     },
 	{
-      "Reviewer": "IEEE Signal Processing Letters",
+      "name": "IEEE Signal Processing Letters",
+	  "position": "Reviewer",
 	  "date": "2025"
     },
 	{
-      "Reviewer": "International Joint Conference on Neural Networks",
+      "name": "International Joint Conference on Neural Networks",
+	  "position": "Reviewer",
 	  "date": "2025"
     },
 	{
-      "Reviewer": "International Conference on Multimedia& Expo",
+      "name": "International Conference on Multimedia& Expo",
+	  "position": "Reviewer",
 	  "date": "2025"
     },
 	{
-      "Reviewer": "International Conference on Acoustics, Speech and Signal Processing",
+      "name": "International Conference on Acoustics, Speech and Signal Processing",
+	  "position": "Reviewer",
 	  "date": "2023-2025"
     },
 	{
-      "Reviewer": "International Society for Music Information Retrieval Conference ",
+      "name": "International Society for Music Information Retrieval Conference",
+	  "position": "Reviewer",
 	  "date": "2020-2025"
     },
 	{
-      "Reviewer": "Digital Library for Musicology (also Programme Committee member)",
+      "name": "Digital Library for Musicology (also Programme Committee member)",
+	  "position": "Reviewer",
 	  "date": "2023, 2025"
     }
   ],
@@ -175,7 +184,7 @@
     },
 	{
       "title": "Graduate Fellowship",
-      "date": "2013-2015",
+      "date": "2013 to 2015",
       "awarder": "Peking University",
       "summary": "The monthly subsidy is granted to master students who are recommended for admission."
     },
@@ -193,7 +202,7 @@
     },
 	{
       "title": "Xianzi Zeng Scholarship (曾宪梓奖学金)",
-      "date": "2011-2013",
+      "date": "2011 to 2013",
       "awarder": "Xianzi Zeng Educational Fund",
       "summary": "The monthly subsidy is granted to students who excels at studies and are in need of financial support."
     },
@@ -205,7 +214,7 @@
     },
 	{
       "title": "National Encouragement Scholarship (国家励志奖学金)",
-      "date": "2010-2012",
+      "date": "2010 to 2012",
       "awarder": "Jilin University",
       "summary": "The annual subsidy is granted to students who excels at studies and are in need of financial support."
     },
@@ -236,23 +245,23 @@
   ],
   "music skills": [
     {
-      "Performance": "Piano",
-      "level": "Advanced",
+      "language": "Piano",
+      "fluency": "Advanced",
       "icon": ""
     },
     {
-      "Performance": "Vocal",
-      "level": "Advanced",
+      "language": "Vocal",
+      "fluency": "Advanced",
       "icon": ""
     },
 	{
-      "Performance": "Guitar",
-      "level": "Intermediate",
+      "language": "Guitar",
+      "fluency": "Intermediate",
       "icon": ""
     },
 	{
-      "Theory": "Harmony and music form analysis",
-      "level": "Professional",
+      "language": "Harmony and music form analysis",
+      "fluency": "Professional",
       "icon": ""
     }
 	
