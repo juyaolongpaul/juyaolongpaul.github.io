@@ -7,7 +7,7 @@ subtitle: <a href='#'>Tenure-track Assistant Professor (independent PI) @ Great 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>16 University Road, Songshan Lake</p>
     <p>Dongguan, Guangdong Province, China</p>
@@ -26,6 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Graduating from [Jilin University](https://www.jlu.edu.cn/) as a computer science B.S., I achieved an M.S. from [Peking University](http://www.cis.pku.edu.cn/auditory/auditory.htm), where I was fortunate to engage in the research of music technology, an interdisciplinary field between music and computer science. During my master study, I discovered my passion for research and was determined to pursue a doctoral study. 
+Graduating from [Jilin University](https://www.jlu.edu.cn/) as a computer science B.S., I was fortunate to engage in the research of music technology, an interdisciplinary field between music and computer science. During my master study at [Peking University](http://www.cis.pku.edu.cn/auditory/auditory.htm), I discovered my passion for research and was determined to pursue a doctoral study. 
 
-In 2021, I obtained a Ph.D. degree (music technology) from [Distributed Digital Music Archives & Libraries Lab](http://ddmal.music.mcgill.ca/) at [McGill University](https://www.mcgill.ca/). My primary research topic is automatic music transcription, and I am generally interested in applied machine learning, music theory, and digital music libraries. I used to work at [Tencent Music Entertainment](https://www.tencentmusic.com/en-us/) as a Senior Researcher to develop AI music applications for QQ Music (2020-2022), and at Huawei 2012 Laboratory, [Central Media Technology Institute](https://www.bilibili.com/video/BV1PF411T7Tu/) as a principal engineer leading relevant music research/application projects (2022-2025), particularly the [Xiaoyi Band](https://news.qq.com/rain/a/20250620A094DQ00). Now I am an assistant professor at [Great Bay University](https://www.gbu.edu.cn/menu/177). 
+In 2021, I obtained a Ph.D. degree (music technology) from [Distributed Digital Music Archives & Libraries Lab](http://ddmal.music.mcgill.ca/) at [McGill University](https://www.mcgill.ca/) and spent my next 4 years in the industry, where I used to work at [Tencent Music Entertainment](https://www.tencentmusic.com/en-us/) as a Senior Researcher to develop AI music applications for QQ Music (2020-2022), and at Huawei 2012 Laboratory, [Central Media Technology Institute](https://www.bilibili.com/video/BV1PF411T7Tu/) as a principal engineer leading relevant music research/application projects (2022-2025), particularly the [Xiaoyi Band](https://news.qq.com/rain/a/20250620A094DQ00). Now I am an assistant professor at [Great Bay University](https://www.gbu.edu.cn/menu/177).
+
+My primary research topic is __automatic music transcription__, a sub-topic of __music information retrieval__ field, including singing voice transcription, beat detection, chord recognition, music structure segmentation, and so on. I am also interested in applied machine learning, music theory, and digital music libraries.
