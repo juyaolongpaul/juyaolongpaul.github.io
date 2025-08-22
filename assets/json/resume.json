@@ -125,21 +125,21 @@
   "honors and awards": [
     {
       "title": "Best Reviewer",
-      "date": "2021-11",
+      "date": "2021",
 	  "url": "https://x.com/ISMIRConf/status/1459104636460093447",
       "awarder": "the International Society for Music Information Retrieval Conference",
       "summary": "Top 5% reviewers of 2021."
     },
 	{
       "title": "Graduate Travel Award",
-      "date": "2020-11",
+      "date": "2020",
 	  "url": "https://www.mcgill.ca/music/students/competitions-awards/travel",
       "awarder": "Schulich Shoool of Music, McGill University",
       "summary": "Travel grant to support international conference presentations."
     },
 	{
       "title": "CIRMMT Travel Award",
-      "date": "2017-2020",
+      "date": "2017–2020",
 	  "url": "https://www.cirmmt.org/en/funding/travel-awards",
       "awarder": "CIRMMT",
       "summary": "Travel grant to support international conference presentations."
@@ -153,13 +153,13 @@
     },
 	{
       "title": "Graduate Fellowship",
-      "date": "2013 to 2015",
+      "date": "2013–2015",
       "awarder": "Peking University",
       "summary": "The monthly subsidy is granted to master students who are recommended for admission."
     },
 	{
       "title": "Graduate Special Scholarship",
-      "date": "2014-10",
+      "date": "2014",
       "awarder": "Peking University",
       "summary": "To master students who excel at studies."
     },
@@ -171,25 +171,25 @@
     },
 	{
       "title": "Xianzi Zeng Scholarship (曾宪梓奖学金)",
-      "date": "2011 to 2013",
+      "date": "2011–2013",
       "awarder": "Xianzi Zeng Educational Fund",
       "summary": "The monthly subsidy is granted to students who excel at studies and are in need of financial support."
     },
 	{
       "title": "The CCF Outstanding Undergraduate Award (CCF百名优秀大学生)",
-      "date": "2012-10",
+      "date": "2012",
       "awarder": "Chinese Computer Federation (CCF)",
       "summary": "The top 100 outstanding students are chosen nation-wide by CCF who excel at computer science studies. The awardees are sponsored to participate in the China National Computer Congress."
     },
 	{
       "title": "National Encouragement Scholarship (国家励志奖学金)",
-      "date": "2010 to 2012",
+      "date": "2010–2012",
       "awarder": "Jilin University",
       "summary": "The annual subsidy is granted to students who excel at studies and are in need of financial support."
     },
 	{
       "title": "Self-reliance and Independence Student (自立自强大学生)",
-      "date": "2011-05",
+      "date": "2011",
       "awarder": "Jilin University",
       "summary": "To Undergraduate students who finally support themselves and excel at studies."
     },
