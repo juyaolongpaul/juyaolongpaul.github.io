@@ -111,34 +111,15 @@
   ],
   "academic services": [
 	{
-      "name": "IEEE Signal Processing Letters",
-	  "position": "Reviewer",
-	  "date": "2021-11"
-    },
-	{
-      "name": "International Joint Conference on Neural Networks",
-	  "position": "Reviewer",
-	  "date": "2021-11"
-    },
-	{
-      "name": "International Conference on Multimedia& Expo",
-	  "position": "Reviewer",
-	  "date": "2021-11"
-    },
-	{
-      "name": "International Conference on Acoustics, Speech and Signal Processing",
-	  "position": "Reviewer",
-	  "date": "2021-11"
-    },
-	{
-      "name": "International Society for Music Information Retrieval Conference",
-	  "position": "Reviewer",
-	  "date": "2021-11"
-    },
-	{
-      "name": "Digital Library for Musicology (also Programme Committee member)",
-	  "position": "Reviewer",
-	  "date": "2021-11"
+      "name": "Reviewer",
+	  "keywords": [
+        "IEEE Signal Processing Letters",
+        "International Joint Conference on Neural Networks",
+        "International Conference on Multimedia& Expo",
+        "International Conference on Acoustics, Speech and Signal Processing",
+        "International Society for Music Information Retrieval Conference",
+        "Digital Library for Musicology (also Programme Committee member)"
+      ]
     }
   ],
   "honors and awards": [
