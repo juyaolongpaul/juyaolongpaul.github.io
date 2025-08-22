@@ -1,13 +1,12 @@
 {
   "basics": {
-    "name": "Yaolong Ju",
+    "name": "Yaolong Ju (鞠曜隆)",
     "label": "Tenure-track Assistant Professor (independent PI)/Researcher",
     "image": "",
-    "email": "juyaolong@gbu.edu.cn",
-    "phone": "17574805070",
+    "email": "juyaolong at gbu.edu.cn",
     "url": "https://juyaolongpaul.github.io/",
     "location": {
-      "address": "Room 303, No. 8 Building 16 University Road, Songshan Lake",
+      "address": "16 University Road, Songshan Lake",
       "city": "Dongguan",
       "countryCode": "CN",
       "region": "Guangdong"
@@ -111,16 +110,36 @@
   ],
   "academic services": [
 	{
-      "name": "Reviewer",
-	  "keywords": [
-        "IEEE Signal Processing Letters",
-        "International Joint Conference on Neural Networks",
-        "International Conference on Multimedia& Expo",
-        "International Conference on Acoustics, Speech and Signal Processing",
-        "International Society for Music Information Retrieval Conference",
-        "Digital Library for Musicology (also Programme Committee member)"
-      ]
+      "name": "IEEE Signal Processing Letters",
+	  "position": "Reviewer",
+	  "date": "2025"
+    },
+	{
+      "name": "International Joint Conference on Neural Networks",
+	  "position": "Reviewer",
+	  "date": "2025"
+    },
+	{
+      "name": "International Conference on Multimedia& Expo",
+	  "position": "Reviewer",
+	  "date": "2025"
+    },
+	{
+      "name": "International Conference on Acoustics, Speech and Signal Processing",
+	  "position": "Reviewer",
+	  "date": "2023–2025"
+    },
+	{
+      "name": "International Society for Music Information Retrieval Conference",
+	  "position": "Reviewer",
+	  "date": "2020–2025"
+    },
+	{
+      "name": "Digital Library for Musicology (also Programme Committee member)",
+	  "position": "Reviewer",
+	  "date": "2023, 2025"
     }
+	
   ],
   "honors and awards": [
     {
