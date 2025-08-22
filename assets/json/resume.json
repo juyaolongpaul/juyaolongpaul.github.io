@@ -60,51 +60,51 @@
   ],
   "funds and grants": [
     {
-      "name": "The Québec Research Fund - Society and Culture (FRQSC) Doctoral Scholarship ($84,000 CAD)",
+      "position": "The Québec Research Fund - Society and Culture (FRQSC) Doctoral Scholarship ($84,000 CAD)",
 	  "startDate": "2018",
 	  "endDate": "2022",
-      "position": "FRQSC",
+      "name": "FRQSC",
       "url": "https://frq.gouv.qc.ca/en/society-and-culture/",
       "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis using Deep Learning for Large-scale Datasets', supervised by Prof. Ichiro Fujinaga."
     },
 	{
-      "name": "CIRMMT Student Award ($2,100 CAD)",
+      "position": "CIRMMT Student Award ($2,100 CAD)",
       "startDate": "2020",
 	  "endDate": "2021",
-      "position": "Centre for Interdisciplinary Research in Music Media and Technology (CIRMMT)",
+      "name": "Centre for Interdisciplinary Research in Music Media and Technology (CIRMMT)",
       "url": "https://www.cirmmt.org/en/funding/past-student-award-recipients",
       "summary": "Awarded by the research topic of 'Automatic figured bass annotation and search in Bach chorales', supervised by Prof. Ichiro Fujinaga and Prof. Peter Schubert."
     },
 	{
-      "name": "CIRMMT Agile Seed Fund ($1,500 CAD)",
+      "position": "CIRMMT Agile Seed Fund ($1,500 CAD)",
       "startDate": "2019",
 	  "endDate": "2020",
-      "position": "CIRMMT",
+      "name": "CIRMMT",
       "url": "https://www.cirmmt.org/en/funding/past-agile-seed-funding-recipients",
       "summary": "Awarded by the research topic of 'Digitizing and translating figured bass into chord labels for Bach chorales in symbolic formats', co-applied with Sylvain Margot and supervised by Prof. Ichiro Fujinaga."
     },
 	{
-      "name": "CSCDS Interdisciplinary Research Project Seed Fund ($1,000 CAD)",
+      "position": "CSCDS Interdisciplinary Research Project Seed Fund ($1,000 CAD)",
       "startDate": "2019",
 	  "endDate": "2020",
 	  "url": "https://www.mcgill.ca/cscds/research-slam-networking-launch",
-      "position": "Centre for Social and Cultural Data Science, McGill University",
+      "name": "Centre for Social and Cultural Data Science, McGill University",
       "summary": "Awarded by the research topic of 'The Evolution of Common-Practice Harmony in Baroque Music: A Computational Study of Four-Voice Choral Music', co-applied with Samuel Howes."
     },
 	{
-      "name": "CIRMMT Student Award ($3,500 CAD)",
+      "position": "CIRMMT Student Award ($3,500 CAD)",
       "startDate": "2018",
 	  "endDate": "2019",
-      "position": "CIRMMT",
+      "name": "CIRMMT",
       "url": "https://www.cirmmt.org/en/funding/past-student-award-recipients",
       "summary": "Awarded by the research topic of 'Generating Multi-style Harmonic Analysis Using Artificial Intelligence', supervised by Prof. Ichiro Fujinaga and Prof. Jon Wild."
     },
 	{
-      "name": "CSCDS Interdisciplinary Research Project Seed Fund ($2,000 CAD)",
+      "position": "CSCDS Interdisciplinary Research Project Seed Fund ($2,000 CAD)",
       "startDate": "2017",
 	  "endDate": "2018",
 	  "url": "https://www.mcgill.ca/cscds/research-slam-networking-launch",
-      "position": "Centre for Social and Cultural Data Science, McGill University",
+      "name": "Centre for Social and Cultural Data Science, McGill University",
       "summary": "Awarded by the research topic of 'Automatic Harmonic Analysis for Symbolic Music Using Deep Learning', co-applied with Nathaniel Condit-Schultz and Koustuv Sinha."
     }
   ],
