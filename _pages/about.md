@@ -2,14 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Assistant Professor @ Great Bay University</a>.
+subtitle: <a href='#'>Tenure-track Assistant Professor (independent PI) @ Great Bay University</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Room 303, No. 8 Building</p>
     <p>16 University Road, Songshan Lake</p>
     <p>Dongguan, Guangdong Province, China</p>
 
