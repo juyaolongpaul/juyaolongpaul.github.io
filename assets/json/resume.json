@@ -216,7 +216,59 @@
       "title": "National Grant (助学金)",
       "date": "2010",
       "awarder": "Jilin University",
-      "summary": "To Undergraduate students who are in need of financial support."
+      "summary": "To Undergraduate students who need financial support."
+    }
+  ],
+	"invited talks": [
+    {
+      "title": "The Research Symposium Series of Audio Department, Huawei",
+      "date": "2023-11-07",
+      "awarder": "Automatic Singing Skill Evaluation using Timbral Features, Attention, and Singing Voice Separation"
+    },
+	{
+      "title": "CIRMMT-OICRM-BRAMS Student (COBS) Symposium",
+      "date": "2020-06-04",
+      "awarder": "Automatic Figured Bass Annotation and Search in Bach Chorales"
+    },
+	{
+      "title": "SIMSSA Workshop XIX at CIRMMT",
+      "date": "2019-09-21",
+      "awarder": "Chord Progressions in Lutheran Chorales"
+    },
+	{
+      "title": "CIRMMT-OICRM-BRAMS Student (COBS) Symposium",
+      "date": "2019-05-09",
+      "awarder": "An Interactive Workflow for Generating Chord Labels for Homorhythmic Music in Symbolic Formats"
+    },
+	{
+      "title": "3rd CSCDS Spring Research SLAM",
+      "date": "2019-05-08",
+      "awarder": "SIMSSA Database"
+    },
+	{
+      "title": "SIMSSA Workshop XVII at CIRMMT",
+      "date": "2018-12-01",
+      "awarder": "Chord Progressions in Lutheran Chorales"
+    },
+	{
+      "title": "CIRMMT Student Symposium",
+      "date": "2018-05-17",
+      "awarder": "Generating Multi-style Harmonic Analysis Using Artificial Intelligence for Homorhythmic Music"
+    },
+	{
+      "title": "2nd CSCDS Spring Research SLAM",
+      "date": "2018-05-10",
+      "awarder": "Automatic Harmonic Analysis for Symbolic Music Using Deep Learning"
+    },
+	{
+      "title": "1st CSCDS Spring Research SLAM",
+      "date": "2017-04-24",
+      "awarder": "Automatic Harmonic Analysis"
+    },
+	{
+      "title": "CIRMMT Workshop: Musical Machines",
+      "date": "2016-10-21",
+      "awarder": "An Automatic Chord Arrangement System Based on DNN and HMM"
     }
   ],
   "languages": [
