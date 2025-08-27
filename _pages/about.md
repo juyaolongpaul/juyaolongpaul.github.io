@@ -26,8 +26,6 @@ Tenure-track Assistant Professor (independent PI) @ Great Bay University
 
 16 University Road, Songshan Lake, Dongguan, Guangdong Province, China
 
-[中文介绍](https://www.gbu.edu.cn/detail/article/1453)
-
 Graduating from [Jilin University](https://www.jlu.edu.cn/) as a computer science B.S., I was fortunate to engage in the research of music technology, an interdisciplinary field between music and computer science. During my master's study at [Peking University](http://www.cis.pku.edu.cn/auditory/auditory.htm), I discovered my passion for research and was determined to pursue a doctoral study. 
 
 In 2021, I obtained a Ph.D. degree in music technology from [Distributed Digital Music Archives & Libraries Lab](http://ddmal.music.mcgill.ca/) at [McGill University](https://www.mcgill.ca/) and spent my next few years in the industry, where I used to work at [Tencent Music Entertainment](https://www.tencentmusic.com/en-us/) as a Senior Researcher to develop AI music applications for QQ Music (2020-2022), and at Huawei 2012 Laboratory's [Central Media Technology Institute](https://www.bilibili.com/video/BV1PF411T7Tu/) as a principal engineer leading relevant music research/application projects (2022-2025), particularly the [Xiaoyi Band](https://news.qq.com/rain/a/20250620A094DQ00). Now I am an assistant professor at [Great Bay University](https://www.gbu.edu.cn/menu/177).
