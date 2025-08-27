@@ -2,8 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Tenure-track Assistant Professor (independent PI) @ Great Bay University    <p>16 University Road, Songshan Lake, Dongguan, Guangdong Province, China</p>
-    </a>
 
 profile:
   align: right
@@ -24,6 +22,10 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+Tenure-track Assistant Professor (independent PI) @ Great Bay University
+
+16 University Road, Songshan Lake, Dongguan, Guangdong Province, China
+
 [中文介绍](https://www.gbu.edu.cn/detail/article/1453)
 
 Graduating from [Jilin University](https://www.jlu.edu.cn/) as a computer science B.S., I was fortunate to engage in the research of music technology, an interdisciplinary field between music and computer science. During my master's study at [Peking University](http://www.cis.pku.edu.cn/auditory/auditory.htm), I discovered my passion for research and was determined to pursue a doctoral study. 
