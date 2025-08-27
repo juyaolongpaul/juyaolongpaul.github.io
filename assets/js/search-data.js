@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-中文",
-          title: "中文",
-          description: "Coming up...",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/https:/www.gbu.edu.cn/detail/article/1453";
-          },
         },{id: "nav-cv",
           title: "cv",
           description: "Below is my CV.",
@@ -36,6 +29,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
+          },
+        },{id: "nav-中文",
+          title: "中文",
+          description: "Coming up...",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/https:/www.gbu.edu.cn/detail/article/1453";
           },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
