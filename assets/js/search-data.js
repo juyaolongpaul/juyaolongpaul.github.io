@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-中文",
+          title: "中文",
+          description: "Coming up...",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/https:/www.gbu.edu.cn/detail/article/1453";
+          },
         },{id: "nav-cv",
           title: "cv",
           description: "Below is my CV.",
