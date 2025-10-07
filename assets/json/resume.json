@@ -116,6 +116,11 @@
   ],
   "academic services": [
 	{
+      "name": "Conference on Sound and Music Technology",
+	  "position": "Reviewer",
+	  "date": "2025"
+    },
+	{
       "name": "IEEE Signal Processing Letters",
 	  "position": "Reviewer",
 	  "date": "2025"
