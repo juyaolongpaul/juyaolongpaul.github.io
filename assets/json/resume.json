@@ -116,6 +116,11 @@
   ],
   "academic services": [
 	{
+      "name": "Scientific Reports",
+	  "position": "Reviewer",
+	  "date": "2025"
+    },
+	{
       "name": "Conference on Sound and Music Technology",
 	  "position": "Reviewer",
 	  "date": "2025"
