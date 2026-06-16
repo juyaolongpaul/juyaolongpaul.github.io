@@ -30,12 +30,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-mmr-lab",
+          title: "MMR Lab",
+          description: "Multimodal Music Research Lab",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/mmr-lab/";
+          },
         },{id: "nav-中文",
           title: "中文",
           description: "Coming up...",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/https:/www.gbu.edu.cn/detail/article/1453";
+            window.location.href = "/chinese/";
           },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
