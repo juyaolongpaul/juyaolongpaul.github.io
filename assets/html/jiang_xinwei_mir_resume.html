@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蒋昕玮 | Music Information Retrieval &amp; Multimodal Research</title>
+  <style>
+    :root {
+      --bg: #f2eadc;
+      --paper: rgba(255, 252, 246, 0.88);
+      --paper-strong: rgba(255, 253, 248, 0.97);
+      --paper-soft: rgba(248, 238, 224, 0.88);
+      --ink: #17120e;
+      --muted: #6f6659;
+      --line: rgba(79, 55, 34, 0.16);
+      --accent: #b76a35;
+      --accent-soft: #f0d6b8;
+      --accent-deep: #3a2418;
+      --amber: #e6a857;
+      --audio-blue: #315b6d;
+      --glow: rgba(230, 168, 87, 0.32);
+      --shadow: 0 34px 110px rgba(42, 31, 20, 0.16);
+      --shadow-soft: 0 20px 54px rgba(42, 31, 20, 0.1);
+      --radius: 28px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 4%, rgba(230, 168, 87, 0.26), transparent 23%),
+        radial-gradient(circle at 86% 14%, rgba(49, 91, 109, 0.15), transparent 21%),
+        linear-gradient(90deg, rgba(58, 36, 24, 0.04) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(58, 36, 24, 0.035) 1px, transparent 1px),
+        linear-gradient(180deg, #eadfce 0%, var(--bg) 42%, #fbf7f0 100%);
+      background-size: auto, auto, 42px 42px, 42px 42px, auto;
+      font-family: "Avenir Next", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.72;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(115deg, transparent 0 58%, rgba(183, 106, 53, 0.08) 58% 58.4%, transparent 58.4%),
+        radial-gradient(circle at 52% 8%, rgba(255, 255, 255, 0.36), transparent 28%);
+      mix-blend-mode: multiply;
+    }
+
+    ::selection {
+      background: rgba(230, 168, 87, 0.42);
+      color: var(--ink);
+    }
+
+    h1, h2, h3, .display {
+      font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "Source Han Serif SC", serif;
+      letter-spacing: 0.01em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      color: var(--accent-deep);
+      text-decoration: underline;
+      text-decoration-color: rgba(183, 106, 53, 0.45);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid rgba(183, 106, 53, 0.5);
+      outline-offset: 4px;
+    }
+
+    .page-shell {
+      position: relative;
+      width: min(calc(100% - 32px), var(--max));
+      margin: 30px auto 64px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 10px 4px 22px;
+      color: var(--muted);
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+    }
+
+    .topbar .brand {
+      color: var(--accent-deep);
+      font-weight: 800;
+    }
+
+    .lang-toggle {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px;
+      border-radius: 999px;
+      border: 1px solid rgba(109, 87, 60, 0.16);
+      background: rgba(255, 255, 255, 0.76);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88), 0 12px 30px rgba(42, 31, 20, 0.07);
+      backdrop-filter: blur(12px);
+    }
+
+    .lang-toggle button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 9px 14px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+    }
+
+    .lang-toggle button:hover {
+      transform: translateY(-1px);
+    }
+
+    .lang-toggle button.is-active {
+      background: linear-gradient(135deg, var(--accent-deep), #7b4327);
+      color: #fff9f3;
+      box-shadow: 0 10px 24px rgba(79, 47, 33, 0.2);
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+      gap: 34px;
+      align-items: stretch;
+      padding: clamp(28px, 4vw, 48px);
+      border: 1px solid rgba(109, 87, 60, 0.16);
+      border-radius: calc(var(--radius) + 14px);
+      background:
+        linear-gradient(120deg, rgba(255, 252, 246, 0.94), rgba(255, 247, 234, 0.86)),
+        repeating-linear-gradient(90deg, rgba(49, 91, 109, 0.07) 0 1px, transparent 1px 18px);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto 36px 30px 36px;
+      height: 62px;
+      opacity: 0.16;
+      background: linear-gradient(90deg, transparent, var(--audio-blue), var(--accent), transparent);
+      clip-path: polygon(0 52%, 6% 38%, 11% 64%, 17% 24%, 22% 72%, 28% 34%, 33% 58%, 39% 18%, 44% 76%, 50% 43%, 56% 62%, 62% 28%, 68% 70%, 74% 38%, 80% 56%, 86% 32%, 92% 66%, 100% 48%, 100% 100%, 0 100%);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      padding: 8px 14px;
+      border: 1px solid rgba(183, 106, 53, 0.16);
+      border-radius: 999px;
+      background: rgba(183, 106, 53, 0.08);
+      color: var(--accent-deep);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(183, 106, 53, 0.13), 0 0 26px var(--glow);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3.2rem, 6.4vw, 6rem);
+      line-height: 0.9;
+      font-weight: 800;
+      color: #140f0b;
+      text-wrap: balance;
+    }
+
+    .hero-copy .subtitle {
+      max-width: 34ch;
+      font-size: clamp(1.12rem, 1.85vw, 1.42rem);
+      line-height: 1.55;
+      color: #51473b;
+    }
+
+    .summary {
+      max-width: 64ch;
+      font-size: 1.03rem;
+      color: #342d25;
+    }
+
+    .focus-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .focus-list li {
+      padding: 9px 14px;
+      border: 1px solid rgba(109, 87, 60, 0.14);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--accent-deep);
+      font-size: 0.92rem;
+      font-weight: 650;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72), 0 10px 26px rgba(42, 31, 20, 0.05);
+    }
+
+    .hero-aside {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+      min-width: 0;
+    }
+
+    .portrait-card,
+    .panel,
+    .timeline-card,
+    .project-card,
+    .award-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper-strong);
+    }
+
+    .portrait-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 100%;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(230, 168, 87, 0.32), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(49, 91, 109, 0.16), transparent 28%),
+        linear-gradient(160deg, #fffaf2 0%, #f4eadc 48%, #eadcc8 100%);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78);
+    }
+
+    .portrait-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -30px -56px auto;
+      width: 190px;
+      height: 190px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(183, 106, 53, 0.14), transparent 68%);
+    }
+
+    .portrait-photo {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid rgba(109, 87, 60, 0.12);
+      box-shadow: 0 24px 50px rgba(42, 31, 20, 0.14);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .portrait-photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 22%;
+    }
+
+    .profile-badge {
+      position: absolute;
+      z-index: 2;
+      left: 20px;
+      bottom: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(20, 15, 11, 0.76);
+      color: #fffaf4;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 36px rgba(20, 15, 11, 0.22);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .profile-badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--amber);
+      box-shadow: 0 0 0 6px rgba(230, 168, 87, 0.16);
+    }
+
+    .portrait-card h2 {
+      position: relative;
+      z-index: 1;
+      margin: 22px 0 8px;
+      font-size: 2.08rem;
+    }
+
+    .portrait-card p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: var(--muted);
+      max-width: 28ch;
+    }
+
+    .info-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .info-item {
+      padding: 14px 16px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(109, 87, 60, 0.11);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .info-item:hover {
+      transform: translateY(-2px);
+      border-color: rgba(183, 106, 53, 0.24);
+      box-shadow: 0 14px 30px rgba(42, 31, 20, 0.08);
+    }
+
+    .info-item span {
+      display: block;
+      font-size: 0.74rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .info-item strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 0.98rem;
+      line-height: 1.5;
+      color: var(--ink);
+      overflow-wrap: anywhere;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(300px, 0.78fr) minmax(0, 1.22fr);
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      min-width: 0;
+    }
+
+    .panel {
+      position: relative;
+      padding: 30px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--amber), transparent);
+      opacity: 0.62;
+    }
+
+    .panel h3 {
+      margin: 0 0 18px;
+      font-size: 1.84rem;
+      line-height: 1.12;
+    }
+
+    [data-i18n] {
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    body.is-switching [data-i18n] {
+      opacity: 0.08;
+      transform: translateY(4px);
+    }
+
+    .research-points,
+    .award-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .research-points {
+      display: grid;
+      gap: 14px;
+    }
+
+    .research-points li,
+    .award-list li {
+      position: relative;
+      padding: 17px 18px 17px 20px;
+      margin-bottom: 0;
+      border: 1px solid rgba(68, 56, 36, 0.08);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(249, 241, 231, 0.6));
+    }
+
+    .research-points li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 18px;
+      bottom: 18px;
+      width: 3px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--accent), var(--audio-blue));
+    }
+
+    .research-points li:last-child,
+    .award-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .research-points strong,
+    .award-list strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.03rem;
+      color: var(--accent-deep);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .project-card h4,
+    .award-card h4 {
+      margin: 0 0 8px;
+      font-size: 1.13rem;
+      line-height: 1.38;
+      color: #24180f;
+    }
+
+    .project-card p,
+    .award-card p,
+    .panel p {
+      margin: 0;
+      color: #3b332a;
+    }
+
+    .section-split {
+      display: grid;
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    .projects {
+      display: grid;
+      gap: 18px;
+    }
+
+    .project-card {
+      position: relative;
+      padding: 24px 24px 22px;
+      background:
+        linear-gradient(90deg, rgba(49, 91, 109, 0.08), transparent 18%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(252, 247, 240, 0.97));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(183, 106, 53, 0.28);
+      box-shadow: 0 18px 40px rgba(42, 31, 20, 0.1);
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .project-meta span {
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(183, 106, 53, 0.09);
+      border: 1px solid rgba(183, 106, 53, 0.1);
+    }
+
+    .highlight {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(183, 106, 53, 0.12), rgba(49, 91, 109, 0.1));
+      color: var(--accent-deep);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    footer {
+      margin: 34px 0 6px;
+      padding: 18px 4px 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 24px;
+      }
+
+      .panel,
+      .project-card,
+      .award-card,
+      .portrait-card {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .portrait-card {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page-shell {
+        width: min(calc(100% - 20px), var(--max));
+        margin-top: 16px;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .lang-toggle {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero {
+        border-radius: 28px;
+      }
+
+      h1 {
+        font-size: 2.85rem;
+      }
+
+      .profile-badge {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        justify-content: center;
+      }
+
+      .panel h3 {
+        font-size: 1.42rem;
+      }
+    }
+  </style>
+</head>
+  <body>
+  <div class="page-shell">
+    <div class="topbar">
+      <div class="brand" data-i18n="brand">学术主页</div>
+      <div class="lang-toggle" role="tablist" aria-label="Language switch">
+        <button type="button" class="is-active" data-lang-btn="zh" aria-pressed="true">中文</button>
+        <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow" data-i18n="eyebrow">研究简介</div>
+        <h1>蒋昕玮</h1>
+        <div class="subtitle" data-i18n="subtitle"></div>
+        <p class="summary" data-i18n="summary">
+          我目前聚焦于音乐信息检索与多模态智能方向，尤其关注歌唱与音乐音频理解、情感计算、跨模态表征学习，以及音频与文本/视觉信号的协同建模。
+        </p>
+        <ul class="focus-list">
+          <li data-i18n="focus1"></li>
+          <li data-i18n="focus2"></li>
+          <li data-i18n="focus3"></li>
+          <li data-i18n="focus4"></li>
+          <li data-i18n="focus5"></li>
+        </ul>
+      </div>
+
+      <aside class="hero-aside">
+        <div class="portrait-card">
+          <div class="portrait-photo">
+            <img src="微信图片_20250606203237_15.jpg" alt="蒋昕玮个人照片">
+            <div class="profile-badge" data-i18n="directionTitle">研究方向</div>
+          </div>
+          <h2 data-i18n="directionTitle">研究方向</h2>
+          <p data-i18n="directionText">音乐信息检索与多模态学习。</p>
+          <div class="info-grid">
+            <div class="info-item">
+              <span data-i18n="educationLabel">教育</span>
+              <strong data-i18n="educationValue">华南师范大学（本科）<br>→ 南方科技大学（硕士）</strong>
+            </div>
+            <div class="info-item">
+              <span data-i18n="statusLabel">状态</span>
+              <strong data-i18n="statusValue">2026.09 - 2029.06<br>硕士在读：南方科技大学 计算机科学与技术</strong>
+            </div>
+            <div class="info-item">
+              <span data-i18n="emailLabel">邮箱</span>
+              <strong><a href="mailto:505139705@qq.com" data-i18n="emailValue">505139705@qq.com</a></strong>
+            </div>
+            <div class="info-item">
+              <span>GitHub</span>
+              <strong><a href="https://github.com/jiangbing22?tab=repositories" target="_blank" rel="noopener noreferrer">github.com/jiangbing22</a></strong>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="column">
+        <div class="panel">
+          <h3 data-i18n="researchTitle">研究兴趣</h3>
+          <ul class="research-points">
+            <li>
+              <strong data-i18n="interest1Title">音乐信息检索与音乐音频理解</strong>
+              <span class="muted" data-i18n="interest1Text">关注歌唱情感识别、音乐片段表征、音频特征学习，以及面向音乐内容分析的深度学习建模。</span>
+            </li>
+            <li>
+              <strong data-i18n="interest2Title">多模态学习与情感计算</strong>
+              <span class="muted" data-i18n="interest2Text">研究文本、音频、视觉多模态信号融合中的模态偏差、鲁棒表征与跨模态协同优化问题。</span>
+            </li>
+            <li>
+              <strong data-i18n="interest3Title">时序建模与序列智能</strong>
+              <span class="muted" data-i18n="interest3Text">对 Transformer、时序预测与长序列建模具有持续实践，强调方法在真实任务中的可迁移性。</span>
+            </li>
+            <li>
+              <strong data-i18n="interest4Title">研究方向聚焦</strong>
+              <span class="muted" data-i18n="interest4Text">希望进一步围绕音乐信息检索、音频-文本对齐、多模态情感理解、音乐生成与音乐认知计算展开系统研究。</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3 data-i18n="snapshotTitle">学术概览</h3>
+          <p data-i18n="snapshotText1">
+            研究主线集中在音乐信息检索与多模态智能交叉区域，当前重点关注歌唱情感建模、音频表征学习、
+            跨模态鲁棒融合，以及相关方法在音乐理解与情感计算任务中的迁移。
+          </p>
+          <p style="margin-top: 14px;" data-i18n="snapshotText2">
+            过往工作覆盖音频算法预研、多模态情感分析、时序建模、工具化系统设计与大模型优化，
+            形成了从理论问题到实验验证、再到工程落地的连续训练路径。
+          </p>
+        </div>
+
+      </div>
+
+      <div class="column">
+        <div class="panel">
+          <h3 data-i18n="experienceTitle">经历与代表性成果</h3>
+          <div class="projects">
+            <article class="project-card">
+              <div class="project-meta">
+                <span data-i18n="exp1Meta1">2024.09 - 2024.11</span>
+                <span data-i18n="exp1Meta2">音频算法</span>
+              </div>
+              <h4 data-i18n="exp1Title">广州市乐沃信息科技有限公司 · 歌唱情感检测算法预研</h4>
+              <p data-i18n="exp1Text">
+                开展歌唱情感检测算法调研、预研设计与验证，参与文档规范、技术调试和需求评审。
+              </p>
+              <span class="highlight" data-i18n="exp1Tag">音乐信息检索 / 音频理解 / 情感分析</span>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span data-i18n="exp2Meta1">本科毕业设计</span>
+                <span data-i18n="exp2Meta2">多模态学习</span>
+              </div>
+              <h4 data-i18n="exp2Title">基于帕累托优化与信息瓶颈的多模态大模型情感分析研究</h4>
+              <p data-i18n="exp2Text">
+                设计多模态情感分析训练框架，缓解模态偏差与梯度冲突，并在 CMU-MOSI/MOSEI 上完成验证。
+              </p>
+              <span class="highlight" data-i18n="exp2Tag">Acc-7 +2.5%，Acc-2 +1.6%，F1 +1.8%</span>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span data-i18n="exp3Meta1">挑战杯终审</span>
+                <span data-i18n="exp3Meta2">工具设计</span>
+              </div>
+              <h4 data-i18n="exp3Title">TimeSeer：跨学科时序任务智能分析工具箱</h4>
+              <p data-i18n="exp3Text">
+                设计覆盖预处理、训练与评估流程的时序分析工具箱，服务跨学科场景并入围“挑战杯”终审决赛。
+              </p>
+              <span class="highlight" data-i18n="exp3Tag">时序建模 / 工具化 / 竞赛成果</span>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span data-i18n="exp4Meta1">北京大学合作</span>
+                <span data-i18n="exp4Meta2">时空建模</span>
+              </div>
+              <h4 data-i18n="exp4Title">基于 RasterConv-iTransformer 的全球土壤湿度模式智能反演研究</h4>
+              <p data-i18n="exp4Text">
+                设计深度学习架构完成多源栅格数据到土壤湿度的高精度反演预测，模型平均 R² &gt; 0.96。
+              </p>
+              <span class="highlight" data-i18n="exp4Tag">时空序列 / 表征学习</span>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span data-i18n="exp5Meta1">企业合作</span>
+                <span data-i18n="exp5Meta2">大模型系统</span>
+              </div>
+              <h4 data-i18n="exp5Title">面向户籍查询场景的 Text2SQL 优化研究</h4>
+              <p data-i18n="exp5Text">
+                基于 Qwen-2.5-Coder-32B 完成量化、微调与推理加速，优化自然语言到 SQL 的转换质量与效率。
+              </p>
+              <span class="highlight" data-i18n="exp5Tag">大模型训练 / 推理优化</span>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span data-i18n="exp6Meta1">代表性成果</span>
+                <span data-i18n="exp6Meta2">竞赛记录</span>
+              </div>
+              <h4 data-i18n="exp6Title">竞赛与音乐技术相关成果</h4>
+              <p data-i18n="exp6Text">
+                获“挑战杯”终审决赛展示、华为 ICT 大赛昇腾 AI 赛道奖项、全球校园人工智能算法精英大赛二等奖，以及音频作品专项奖二等奖。
+              </p>
+              <span class="highlight" data-i18n="exp6Tag">竞赛成果 / 音频工程 / AI 应用</span>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top: 28px;">
+      <h3 data-i18n="statementTitle">研究陈述</h3>
+      <p data-i18n="statementText1">
+        我的研究兴趣正逐步收敛到音乐信息检索与多模态智能交叉区域。当前最感兴趣的问题包括：
+        如何从歌唱与音乐音频中学习更稳定的情感表征；如何缓解音频、文本、视觉等模态在联合训练中的偏差与不平衡；
+        以及如何将多模态表示学习方法迁移到音乐理解、音乐推荐和音乐生成辅助分析等场景。
+      </p>
+      <p style="margin-top: 14px;" data-i18n="statementText2">
+        从音频算法实习到多模态情感分析毕业设计，我的实践路径已经形成一条较明确的主线：
+        以真实感知信号为对象，以表征学习与模型鲁棒性为核心，以可验证实验结果和可落地系统实现为目标。
+        后续希望在音乐信息检索、音频-文本对齐、音乐情感计算和多模态表示学习方向继续深入。
+      </p>
+    </section>
+
+    <footer>
+      <span data-i18n="footer"></span>
+    </footer>
+  </div>
+  <script>
+    const translations = {
+      zh: {
+        brand: '学术主页',
+        eyebrow: '研究简介',
+        subtitle: '计算机科学与技术硕士在读，长期关注音频算法、多模态学习与情感计算。',
+        summary: '我目前聚焦于音乐信息检索与多模态智能方向，尤其关注歌唱与音乐音频理解、情感计算、跨模态表征学习，以及音频与文本/视觉信号的协同建模。',
+        focus1: '音乐信息检索',
+        focus2: '多模态表示学习',
+        focus3: '情感计算',
+        focus4: '音频信号理解',
+        focus5: '序列建模',
+        directionTitle: '研究方向',
+        directionText: '音乐信息检索与多模态学习。',
+        educationLabel: '教育',
+        educationValue: '华南师范大学（本科）<br>→ 南方科技大学（硕士）',
+        statusLabel: '状态',
+        statusValue: '2026.09 - 2029.06<br>硕士在读：南方科技大学 计算机科学与技术',
+        emailLabel: '邮箱',
+        emailValue: '505139705@qq.com',
+        researchTitle: '研究兴趣',
+        interest1Title: '音乐信息检索与音乐音频理解',
+        interest1Text: '关注歌唱情感识别、音乐片段表征、音频特征学习，以及面向音乐内容分析的深度学习建模。',
+        interest2Title: '多模态学习与情感计算',
+        interest2Text: '研究文本、音频、视觉多模态信号融合中的模态偏差、鲁棒表征与跨模态协同优化问题。',
+        interest3Title: '时序建模与序列智能',
+        interest3Text: '对 Transformer、时序预测与长序列建模具有持续实践，强调方法在真实任务中的可迁移性。',
+        interest4Title: '研究方向聚焦',
+        interest4Text: '希望进一步围绕音乐信息检索、音频-文本对齐、多模态情感理解、音乐生成与音乐认知计算展开系统研究。',
+        snapshotTitle: '学术概览',
+        snapshotText1: '研究主线集中在音乐信息检索与多模态智能交叉区域，当前重点关注歌唱情感建模、音频表征学习、跨模态鲁棒融合，以及相关方法在音乐理解与情感计算任务中的迁移。',
+        snapshotText2: '过往工作覆盖音频算法预研、多模态情感分析、时序建模、工具化系统设计与大模型优化，形成了从理论问题到实验验证、再到工程落地的连续训练路径。',
+        experienceTitle: '经历与代表性成果',
+        exp1Meta1: '2024.09 - 2024.11',
+        exp1Meta2: '音频算法',
+        exp1Title: '广州市乐沃信息科技有限公司 · 歌唱情感检测算法预研',
+        exp1Text: '开展歌唱情感检测算法调研、预研设计与验证，参与文档规范、技术调试和需求评审。',
+        exp1Tag: '音乐信息检索 / 音频理解 / 情感分析',
+        exp2Meta1: '本科毕业设计',
+        exp2Meta2: '多模态学习',
+        exp2Title: '基于帕累托优化与信息瓶颈的多模态大模型情感分析研究',
+        exp2Text: '设计多模态情感分析训练框架，缓解模态偏差与梯度冲突，并在 CMU-MOSI/MOSEI 上完成验证。',
+        exp2Tag: 'Acc-7 +2.5%，Acc-2 +1.6%，F1 +1.8%',
+        exp3Meta1: '挑战杯终审',
+        exp3Meta2: '工具设计',
+        exp3Title: 'TimeSeer：跨学科时序任务智能分析工具箱',
+        exp3Text: '设计覆盖预处理、训练与评估流程的时序分析工具箱，服务跨学科场景并入围“挑战杯”终审决赛。',
+        exp3Tag: '时序建模 / 工具化 / 竞赛成果',
+        exp4Meta1: '北京大学合作',
+        exp4Meta2: '时空建模',
+        exp4Title: '基于 RasterConv-iTransformer 的全球土壤湿度模式智能反演研究',
+        exp4Text: '设计深度学习架构完成多源栅格数据到土壤湿度的高精度反演预测，模型平均 R² > 0.96。',
+        exp4Tag: '时空序列 / 表征学习',
+        exp5Meta1: '企业合作',
+        exp5Meta2: '大模型系统',
+        exp5Title: '面向户籍查询场景的 Text2SQL 优化研究',
+        exp5Text: '基于 Qwen-2.5-Coder-32B 完成量化、微调与推理加速，优化自然语言到 SQL 的转换质量与效率。',
+        exp5Tag: '大模型训练 / 推理优化',
+        exp6Meta1: '代表性成果',
+        exp6Meta2: '竞赛记录',
+        exp6Title: '竞赛与音乐技术相关成果',
+        exp6Text: '获“挑战杯”终审决赛展示、华为 ICT 大赛昇腾 AI 赛道奖项、全球校园人工智能算法精英大赛二等奖，以及音频作品专项奖二等奖。',
+        exp6Tag: '竞赛成果 / 音频工程 / AI 应用',
+        statementTitle: '研究陈述',
+        statementText1: '我的研究兴趣正逐步收敛到音乐信息检索与多模态智能交叉区域。当前最感兴趣的问题包括：如何从歌唱与音乐音频中学习更稳定的情感表征；如何缓解音频、文本、视觉等模态在联合训练中的偏差与不平衡；以及如何将多模态表示学习方法迁移到音乐理解、音乐推荐和音乐生成辅助分析等场景。',
+        statementText2: '从音频算法实习到多模态情感分析毕业设计，我的实践路径已经形成一条较明确的主线：以真实感知信号为对象，以表征学习与模型鲁棒性为核心，以可验证实验结果和可落地系统实现为目标。后续希望在音乐信息检索、音频-文本对齐、音乐情感计算和多模态表示学习方向继续深入。',
+        footer: '页面根据你的简历重构，现支持中文与英文切换。',
+      },
+      en: {
+        brand: 'Academic Profile',
+        eyebrow: 'Research Summary',
+        subtitle: 'M.Sc. student in Computer Science and Technology focused on audio algorithms, multimodal learning, and affective computing.',
+        summary: 'I focus on music information retrieval and multimodal intelligence, with an emphasis on singing and music audio understanding, affective computing, cross-modal representation learning, and joint modeling of audio with text and vision.',
+        focus1: 'Music Information Retrieval',
+        focus2: 'Multimodal Representation Learning',
+        focus3: 'Affective Computing',
+        focus4: 'Audio Signal Understanding',
+        focus5: 'Sequence Modeling',
+        directionTitle: 'Research Direction',
+        directionText: 'Music information retrieval and multimodal learning.',
+        educationLabel: 'Education',
+        educationValue: 'South China Normal University (B.Eng.)<br>→ Southern University of Science and Technology (M.Sc.)',
+        statusLabel: 'Status',
+        statusValue: '2026.09 - 2029.06<br>M.Sc. student, Computer Science and Technology, SUSTech',
+        emailLabel: 'Email',
+        emailValue: '505139705@qq.com',
+        researchTitle: 'Research Interests',
+        interest1Title: 'Music information retrieval and music audio understanding',
+        interest1Text: 'Focus on singing emotion recognition, music segment representation, audio feature learning, and deep learning for music content analysis.',
+        interest2Title: 'Multimodal learning and affective computing',
+        interest2Text: 'Study modality bias, robust representations, and cross-modal optimization in fused text, audio, and visual signals.',
+        interest3Title: 'Sequence modeling and temporal intelligence',
+        interest3Text: 'Continue to practice Transformer-based modeling, time-series forecasting, and long-sequence learning for real-world tasks.',
+        interest4Title: 'Focused research agenda',
+        interest4Text: 'Aim to deepen work on MIR, audio-text alignment, multimodal emotion understanding, music generation, and music cognition.',
+        snapshotTitle: 'Academic Snapshot',
+        snapshotText1: 'My research agenda sits at the intersection of music information retrieval and multimodal intelligence, with current attention on singing emotion modeling, audio representation learning, cross-modal robustness, and transfer to music understanding and affective computing.',
+        snapshotText2: 'Prior work spans audio algorithm exploration, multimodal sentiment analysis, temporal modeling, tool-oriented system design, and LLM optimization, forming a continuous path from theory to validation and deployment.',
+        experienceTitle: 'Experience and Selected Results',
+        exp1Meta1: '2024.09 - 2024.11',
+        exp1Meta2: 'Audio Algorithms',
+        exp1Title: 'Levo Information Technology, Guangzhou - Singing emotion detection pre-study',
+        exp1Text: 'Conducted research, prototype design, and validation for singing emotion detection, and contributed to documentation, debugging, and requirement reviews.',
+        exp1Tag: 'MIR / Audio Understanding / Emotion',
+        exp2Meta1: 'Thesis',
+        exp2Meta2: 'Multimodal Learning',
+        exp2Title: 'Multimodal large-model emotion analysis with Pareto optimization and information bottleneck',
+        exp2Text: 'Designed a training framework for multimodal emotion analysis to mitigate modality bias and gradient conflicts, validated on CMU-MOSI/MOSEI.',
+        exp2Tag: 'Acc-7 +2.5%, Acc-2 +1.6%, F1 +1.8%',
+        exp3Meta1: 'Challenge Cup',
+        exp3Meta2: 'Toolkit Design',
+        exp3Title: 'TimeSeer: an intelligent toolkit for interdisciplinary time-series tasks',
+        exp3Text: 'Built a time-series toolkit covering preprocessing, training, and evaluation, and reached the final round of the Challenge Cup.',
+        exp3Tag: 'Temporal Modeling / Tooling / Competition',
+        exp4Meta1: 'PKU Collaboration',
+        exp4Meta2: 'Spatiotemporal Modeling',
+        exp4Title: 'Global soil moisture inference with RasterConv-iTransformer',
+        exp4Text: 'Designed a deep-learning architecture for high-accuracy inference from multi-source raster data to soil moisture, with mean R² > 0.96.',
+        exp4Tag: 'Spatiotemporal Series / Representation Learning',
+        exp5Meta1: 'Industry Collaboration',
+        exp5Meta2: 'LLM Systems',
+        exp5Title: 'Text2SQL optimization for household registration lookup',
+        exp5Text: 'Improved quality and efficiency of natural-language-to-SQL conversion via quantization, fine-tuning, and inference acceleration on Qwen-2.5-Coder-32B.',
+        exp5Tag: 'LLM Training / Inference Optimization',
+        exp6Meta1: 'Selected Results',
+        exp6Meta2: 'Competitions',
+        exp6Title: 'Competition and music-technology results',
+        exp6Text: 'Received awards and showcases from the Challenge Cup, Huawei ICT, the Global Campus AI Algorithm Competition, and an audio production special prize.',
+        exp6Tag: 'Competition Results / Audio Engineering / AI Applications',
+        statementTitle: 'Research Statement',
+        statementText1: 'My research interests are converging on the intersection of music information retrieval and multimodal intelligence. I am particularly interested in how to learn more stable emotional representations from singing and music audio, how to reduce bias and imbalance across audio, text, and vision during joint training, and how to transfer multimodal representation learning into music understanding, recommendation, and generation-assisted analysis.',
+        statementText2: 'From audio algorithm internships to a multimodal sentiment analysis thesis, my path has formed a clear line: using real perceptual signals, centering representation learning and model robustness, and validating results with deployable systems. Going forward, I want to deepen work in music information retrieval, audio-text alignment, music emotion modeling, and multimodal representation learning.',
+        footer: 'This page is reconstructed from your resume and now supports Chinese-English switching.',
+      }
+    };
+
+    const switchButtons = Array.from(document.querySelectorAll('[data-lang-btn]'));
+    const translatable = Array.from(document.querySelectorAll('[data-i18n]'));
+
+    function applyLanguage(lang) {
+      document.body.classList.add('is-switching');
+      window.setTimeout(() => document.body.classList.remove('is-switching'), 180);
+
+      switchButtons.forEach((button) => {
+        const active = button.dataset.langBtn === lang;
+        button.classList.toggle('is-active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+      translatable.forEach((element) => {
+        const key = element.dataset.i18n;
+        const value = translations[lang][key];
+        if (value !== undefined) {
+          element.innerHTML = value;
+        }
+      });
+
+      localStorage.setItem('resume-lang', lang);
+    }
+
+    switchButtons.forEach((button) => {
+      button.addEventListener('click', () => applyLanguage(button.dataset.langBtn));
+    });
+
+    applyLanguage(localStorage.getItem('resume-lang') || 'zh');
+  </script>
+</body>
+</html>

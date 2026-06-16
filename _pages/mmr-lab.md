@@ -294,11 +294,15 @@ _styles: |
         </article>
 
         <article class="mmr-member">
-          <div class="mmr-avatar-placeholder" aria-hidden="true">MS</div>
+          <img src="{{ '/assets/img/mmr-lab/xinwei_jiang.jpg' | relative_url }}" alt="Xinwei Jiang">
           <div class="mmr-member-body">
-            <h4>Open Master Position</h4>
+            <h4><a href="https://jiangbing22.github.io/jingbing22.github.io/" rel="external nofollow noopener" target="_blank">Xinwei Jiang</a></h4>
             <p class="mmr-role">Master Student</p>
-            <p class="mmr-bio">To be announced.</p>
+            <p class="mmr-bio">My research focuses on music information retrieval and multimodal intelligence, with interests in singing and music audio understanding, affective computing, and cross-modal representation learning.</p>
+            <div class="mmr-links" aria-label="Xinwei Jiang links">
+              <a href="mailto:505139705@qq.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://github.com/jiangbing22?tab=repositories" aria-label="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
           </div>
         </article>
 
