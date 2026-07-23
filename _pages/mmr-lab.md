@@ -196,6 +196,10 @@ _styles: |
     <h2>News</h2>
     <ul class="mmr-news">
       <li>
+        <time>July 2026</time>
+        <span>One paper was accepted to <a href="https://2026.acmmm.org/">ACMMM 2026</a>.</span>
+      </li>
+      <li>
         <time>Jan 2026</time>
         <span>One paper was accepted to <a href="https://2026.ieeeicassp.org/">ICASSP 2026</a>.</span>
       </li>
