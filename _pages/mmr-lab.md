@@ -221,7 +221,7 @@ _styles: |
       </li>
       <li>
         <time>Aug 15, 2025</time>
-        <span>The Multimodal Music Research Lab was founded at Great Bay University.</span>
+        <span>Yaolong Ju became an assistant professor at Great Bay University and founded the Multimodal Music Research Lab.</span>
       </li>
     </ul>
   </section>
