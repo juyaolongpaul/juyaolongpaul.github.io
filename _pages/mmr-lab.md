@@ -195,6 +195,23 @@ _styles: |
   <section class="mmr-section" id="news">
     <h2>News</h2>
     <ul class="mmr-news">
+      {% assign mmr_news = site.news | sort: 'date' | reverse %}
+      {% for item in mmr_news %}
+        <li>
+          <time>{{ item.date | date: '%b %d, %Y' }}</time>
+          <span>
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+    {% comment %}
       <li>
         <time>July 2026</time>
         <span>One paper was accepted to <a href="https://2026.acmmm.org/">ACMMM 2026</a>.</span>
@@ -221,6 +238,8 @@ _styles: |
       </li>
     </ul>
   </section>
+
+    {% endcomment %}
 
   <section class="mmr-section" id="people">
     <h2>Meet the Team</h2>
