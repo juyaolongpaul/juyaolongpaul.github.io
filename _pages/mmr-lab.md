@@ -195,19 +195,34 @@ _styles: |
   <section class="mmr-section" id="news">
     <h2>News</h2>
     <ul class="mmr-news">
-      {% assign mmr_news = site.news | sort: 'date' | reverse %}
-      {% for item in mmr_news %}
-        <li>
-          <time>{{ item.date | date: '%b %d, %Y' }}</time>
-          <span>
-            {% if item.inline %}
-              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-            {% else %}
-              <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-            {% endif %}
-          </span>
-        </li>
-      {% endfor %}
+      <li>
+        <time>Aug 07, 2026</time>
+        <span>Prof. Ju presented at the 70th <a href="https://www.kmes.or.kr/?mod=main_eng">KMES</a> International Academic Conference.</span>
+      </li>
+      <li>
+        <time>Jul 09, 2026</time>
+        <span>One paper was accepted to <a href="https://2026.acmmm.org/">ACMMM 2026</a>. It is now available on <a href="https://arxiv.org/abs/2608.06165">arXiv</a>.</span>
+      </li>
+      <li>
+        <time>Jan 18, 2026</time>
+        <span>One paper was accepted to <a href="https://2026.ieeeicassp.org/">ICASSP 2026</a>.</span>
+      </li>
+      <li>
+        <time>Sep 27, 2025</time>
+        <span>Prof. Ju presented "Multimedia Music Transcription and its Applications" at <a href="https://www.ascq.org.cn/?p=2308">the 2025 National Conference on Speech, Hearing and Music Acoustics</a>.</span>
+      </li>
+      <li>
+        <time>Sep 08, 2025</time>
+        <span>Multiple research positions are open for <a href="https://mp.weixin.qq.com/s/Cz-bSxvhUy06thRkq0QHOg">postdoctoral researchers</a>, <a href="https://mp.weixin.qq.com/s/ka-7qK4upfNjKvB3xF0mQw">senior researchers</a>, and <a href="https://mp.weixin.qq.com/s/oarE3JY8R6a2BocAG2Hs1A">research assistants</a>.</span>
+      </li>
+      <li>
+        <time>Aug 22, 2025</time>
+        <span>The Multimodal Music Research Lab is recruiting Ph.D. students, master's students, and intern/exchange students. Please contact us if interested.</span>
+      </li>
+      <li>
+        <time>Aug 15, 2025</time>
+        <span>The Multimodal Music Research Lab was founded at Great Bay University.</span>
+      </li>
     </ul>
   </section>
 
