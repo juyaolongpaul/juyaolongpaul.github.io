@@ -201,7 +201,7 @@ _styles: |
       </li>
       <li>
         <time>Jul 09, 2026</time>
-        <span>One paper was accepted to <a href="https://2026.acmmm.org/">ACMMM 2026</a>. It is now available on <a href="https://arxiv.org/abs/2608.06165">arXiv</a>.</span>
+        <span>1 paper accepted for <a href="https://2026.acmmm.org/">ACMMM 2026</a> (Oral presentation). It is now available on <a href="https://arxiv.org/abs/2608.06165">arXiv</a>.</span>
       </li>
       <li>
         <time>Jan 18, 2026</time>
