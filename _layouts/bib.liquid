@@ -144,7 +144,15 @@
           {%- endif %}
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
-        {%- if author_is_self -%}
+        {%- if entry.citation_style == 'chicago' and forloop.first -%}
+          {% if coauthor_url -%}
+            <a href="{{ coauthor_url }}">
+              {{- author_last_html }}, {{ author.first -}}
+            </a>
+          {%- else -%}
+            {{- author_last_html }}, {{ author.first -}}
+          {%- endif -%}
+        {%- elsif author_is_self -%}
           <em>
             {{- author.first }}
             {{ author_last_html -}}
@@ -217,13 +225,24 @@
     {% if is_proceeding and proceedings_venue_text != blank %}
       <span class="pub-periodical">
         In
-        {% if proceedings_venue_text_downcase contains 'proceedings of' %}
-          {{ proceedings_venue_text -}}
+        {% if entry.citation_style == 'chicago' %}
+          <em>{{ proceedings_venue_text }}</em>
+          {%- if pages_text != blank %}, {{ pages_text }}{% endif %}.
+          {%- if entry.address or entry.publisher %}
+            {% if entry.address %} {{ entry.address }}{% endif %}
+            {%- if entry.address and entry.publisher %}: {% endif -%}
+            {{ entry.publisher }}{% if entry.year %}, {{ entry.year }}{% endif %}.
+          {%- elsif entry.year %} {{ entry.year }}.{% endif %}
+          {%- if entry.doi %} <a href="https://doi.org/{{ entry.doi }}">https://doi.org/{{ entry.doi }}</a>.{% endif %}
         {% else %}
-          Proceedings of the {{ proceedings_venue_text -}}
+          {% if proceedings_venue_text_downcase contains 'proceedings of' %}
+            {{ proceedings_venue_text -}}
+          {% else %}
+            Proceedings of the {{ proceedings_venue_text -}}
+          {% endif -%}
+          {%- if pages_text != blank %}, {{ pages_text }}{% endif -%}
+          {%- if entry.year %}. {{ entry.year }}{% endif -%}.
         {% endif -%}
-        {%- if pages_text != blank %}, {{ pages_text }}{% endif -%}
-        {%- if entry.year %}. {{ entry.year }}{% endif -%}.
       </span>
     {% elsif entry.type == 'article' and venue_text != blank %}
       <span class="pub-periodical">

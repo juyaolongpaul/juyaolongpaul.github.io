@@ -238,6 +238,12 @@
   ],
 	"invited talks": [
 	{
+      "title": "The 34th ACM International Conference on Multimedia (ACM Multimedia 2026)",
+      "date": "2026-11-12",
+      "url": "https://2026.acmmm.org/",
+      "awarder": "Audio-to-Score Transcription using Pre-trained Features, Data Augmentation, and the New SheetSage-A2S Dataset"
+    },
+	{
       "title": "The 70th KMES International Academic Conference",
       "date": "2026-08-07",
       "url": "https://www.kmes.or.kr/?mod=main_eng",

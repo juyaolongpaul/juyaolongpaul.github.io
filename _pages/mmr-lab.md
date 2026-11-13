@@ -196,6 +196,10 @@ _styles: |
     <h2>News</h2>
     <ul class="mmr-news">
       <li>
+        <time>Nov 14, 2026</time>
+        <span>Our paper <em><a href="https://maestro.acm.org/trk/clickp?ref=z16l2snue3_2-31bd5_0_190x33ae25x04391&amp;doi=3767308.3835653">Audio-to-Score Transcription using Pre-trained Features, Data Augmentation, and the New SheetSage-A2S Dataset</a></em> won the Outstanding Paper Award (Top 5%) @ ACMMM 2026!</span>
+      </li>
+      <li>
         <time>Aug 07, 2026</time>
         <span>Prof. Ju presented at the 70th <a href="https://www.kmes.or.kr/?mod=main_eng">KMES</a> International Academic Conference.</span>
       </li>
